@@ -1,16 +1,35 @@
-# React + Vite
+# 🚀 TaskFlow - Project Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskFlow este o aplicație **Full Stack** de tip Kanban (inspirată de Trello), construită pentru a gestiona eficient sarcinile dintr-un proiect. Permite utilizatorilor să creeze, să șteargă și să organizeze task-urile în funcție de stadiul lor (To Do, In Progress, Done).
 
-Currently, two official plugins are available:
+## 🌟 Funcționalități Principale
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Kanban Board:** Vizualizare clară a task-urilor pe 3 coloane.
+- **Flux Complet:** Mutarea task-urilor între stări (To Do ➡ In Progress ➡ Done) prin butoane intuitive.
+- **Persistent Data:** Datele sunt salvate sigur în cloud folosind **MongoDB Atlas**.
+- **REST API:** Backend robust care gestionează operațiunile CRUD (Create, Read, Update, Delete).
 
-## React Compiler
+## 🛠️ Tehnologii Folosite (MERN Stack)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Componenta | Tehnologie | Descriere |
+| :--- | :--- | :--- |
+| **Frontend** | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) | Interfața utilizatorului (construită cu Vite) |
+| **Backend** | ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) | Serverul și logica aplicației |
+| **Database** | ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) | Stocarea datelor în Cloud |
+| **API** | ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) | Framework pentru rutele serverului |
 
-## Expanding the ESLint configuration
+## 🚀 Cum să rulezi proiectul local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clonează repository-ul
+git clone https://github.com/Georgi231/TaskFlow.git
+
+### 2. Configurare Backend
+cd server
+npm install
+npm run dev
+
+### 3. Configurare Frontend
+cd client
+npm install
+npm run dev
+
